@@ -6,3 +6,5 @@ for i in range(N):
     score = list(map(int, input().split(" ")))
     student.append(score)
 print(student)
+for i in range(3):
+    print(i)
