@@ -23,4 +23,3 @@ for test_case in range(1,T+1):
             print(f'#{test_case} {grade[i//(N//10)]}')
         #final[i] = grade[i//(N//10)]
     #print(final)
- 
