@@ -1,3 +1,4 @@
+'''
 def left(i,j):
     i = i
     j = j-1
@@ -55,3 +56,36 @@ for i in range(1,N):
         print(a,b)
     else:
         a = a
+'''
+#사각형만들기
+N = int(input())
+square = [[0] * N for s in range(N)]
+print(square)
+
+#초기값 설정
+w = []
+for i in range(N*N):
+    w.append(N*N-i)
+#w.reverse()
+print(w)
+
+if N%2 == 0:
+    a = N//2
+    b = N//2 -1
+    square[a][b] = w[0]
+else:
+    a = N//2
+    b = N//2
+    square[a][b] = w[0]
+print(square)
+
+#길 뚫기
+
+j = True
+k = False
+
+for i in range(1,N):
+    print(i)
+    (a, b) = (a, b+(-1)**j*i)
+    (a, b) = (a+(-1)**k*i, b)
+    if 
